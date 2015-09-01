@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+  <ImageView
+      android:id="@+id/registrationStatus"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:paddingTop="10dp"
+      android:paddingBottom="10dp"/>
+
+  <TextView
+      android:id="@+id/beaconId"
+      android:text="Beacon ID"
+      android:layout_width="wrap_content"
+      android:layout_height="wrap_content"
+      android:paddingTop="10dp"
+      android:paddingBottom="10dp"
+      android:layout_marginStart="10dp"
+      android:layout_toEndOf="@id/registrationStatus"/>
+
+    <TextView
+        android:id="@+id/beaconStatus"
+        android:text="Beacon Status"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_below="@id/registrationStatus"/>
+
+    <TextView
+        android:id="@+id/beaconPlaceId"
+        android:text="Beacon placeId"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_below="@id/beaconStatus"/>
+
+    <TextView
+        android:id="@+id/beaconLat"
+        android:text="Beacon Latitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_below="@id/beaconPlaceId"/>
+
+    <TextView
+        android:id="@+id/beaconLong"
+        android:text="Beacon Longitude"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_toEndOf="@id/beaconLat"
+        android:layout_below="@id/beaconPlaceId"/>
+
+    <TextView
+        android:id="@+id/expectedStability"
+        android:text="Beacon Stabiltiy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_below="@id/beaconLong"/>
+
+    <TextView
+        android:id="@+id/expectedDescription"
+        android:text="Beacon Stabiltiy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:layout_marginStart="10dp"
+        android:layout_below="@id/expectedStability"/>
+
+
+</RelativeLayout>
